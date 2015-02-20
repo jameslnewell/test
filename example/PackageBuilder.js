@@ -13,7 +13,7 @@ var dependencies = [
 
 var builder = new PackageBuilder({
   registries:       [new Github('nib-build-agent', 'P@ssw0rd21')],
-  installDirectory: 'c:\\tmp\\installed-packages'
+  installDirectory: './tmp/install'
 });
 
 builder.install(dependencies, function(error) {

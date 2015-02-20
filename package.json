@@ -1,6 +1,7 @@
 {
-  "name": "nib-fed-test",
-  "private": true,
+  "name": "morsel",
+  "version": "0.0.1",
+  "description": "Deliver your next creation with tasty morsels of frontend code.",
   "dependencies": {
     "debug": "^2.1.1",
     "go-fetch": "^2.0.2",
