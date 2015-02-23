@@ -1,9 +1,10 @@
 {
   "name": "morsel",
   "version": "0.0.1",
-  "description": "Deliver your next creation with tasty morsels of frontend code.",
+  "description": "Craft your next project from tasty morsels of frontend code.",
   "dependencies": {
     "debug": "^2.1.1",
+    "file-deps": "0.0.8",
     "go-fetch": "^2.0.2",
     "go-fetch-auth": "^1.0.1",
     "go-fetch-content-type": "^0.1.0",

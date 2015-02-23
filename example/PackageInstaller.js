@@ -1,5 +1,5 @@
-var PackageBuilder  = require('../lib/PackageBuilder');
-var Github          = require('../lib/Github');
+var PackageInstaller  = require('../lib/PackageInstaller');
+var Github            = require('../lib/Github');
 
 var dependencies = [
   'nib-components/utils@0.0.1',
@@ -11,12 +11,11 @@ var dependencies = [
   'anthonyshort/css-emitter@0.1.1'
 ];
 
-var builder = new PackageBuilder({
+var installer = new PackageInstaller({
   registries:       [new Github('nib-build-agent', 'P@ssw0rd21')],
-  installDirectory: './tmp/install',
-  buildDirectory:   './tmp/build'
+  installDirectory: './tmp/install'
 });
 
-builder.build(dependencies, function(error) {
-  console.log('Built: ', arguments);
+installer.install(dependencies, function(error) {
+  console.log('Installed: ', arguments);
 });
