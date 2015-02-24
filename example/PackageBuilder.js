@@ -17,6 +17,12 @@ var builder = new PackageBuilder({
   buildDirectory:   './tmp/build'
 });
 
-builder.build(dependencies, function(error) {
-  console.log('Built: ', arguments);
+builder.build(dependencies, function(error, output) {
+  console.log('Built: ', error);
+
+  var fs = require('fs');
+  fs.writeFile(builder._buildDirectory+'/build.js', output, function(error) {
+    if (error) console.log(error);
+  });
+
 });

@@ -13,6 +13,7 @@
     "go-fetch-parse-body": "^2.0.0",
     "go-fetch-prefix-url": "^0.2.0",
     "go-fetch-useragent": "^1.0.0",
+    "jsonfile": "^2.0.0",
     "queue": "^3.0.10",
     "semver": "^4.3.0",
     "untar": "^0.2.9"
